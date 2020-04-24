@@ -16,18 +16,48 @@ header h1 {
   grid-template-rows: 1fr 1fr;
   margin: 50px;
 }
-
-.menudescription {
-  margin: 30px;
+.menu .menudescription {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
 }
-.menudescription .menudescription__btn {
-  display: block;
+.menu .menudescription .menudescription__btn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   height: 100%;
+  width: 250px;
+  height: 350px;
   background-color: red;
-  margin: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.prochainement .btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border: solid 1px;
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  height: 100px;
+  margin-top: 10px;
   background-color: yellowgreen;
 }
 
