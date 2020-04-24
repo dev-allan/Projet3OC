@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background: green;
+    h1{
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px;
+}
+
+.menudescription{
+    margin: 30px;
+    .menudescription__btn{
+        display: block;
+        height: 100%;
+        background-color: red;
+        margin: 30px;
+    }
+}
+
+footer{
+    background-color: yellowgreen;
+}
