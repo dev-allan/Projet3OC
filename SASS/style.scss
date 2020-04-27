@@ -3,11 +3,12 @@ $yellowtitle: #fdcb46;
 
 @font-face{
     font-family:"Roboto";
-    src: url("") format("TrueType");
+    src: url("./font/Roboto/Roboto-Regular.ttf") format("TrueType");
 }
 
 body{
     margin: 0px;
+    font-family: Roboto;
 }
 
 header{
@@ -15,7 +16,8 @@ header{
     height: 90px;
     display:flex;
     h1{
-        font-family: Roboto;
+        letter-spacing: -1px;
+        font-size: 40px;
         text-align: center;
         margin: auto;
         color: $yellowtitle;
@@ -57,6 +59,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    h3{
+        font-size: 25px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        margin: 10px 0px 10px 0;
+    }
     .btn{
         display: flex;
         flex-direction: row;
@@ -68,7 +76,7 @@ header{
         border-radius: 10px;
         background-color: $bluecyan;
         color: $yellowtitle;
-        padding: 2px 20px 2px 20px;
+        padding: 2px 30px 2px 30px;
         &:hover{
             background-color: red;
         }
@@ -83,12 +91,13 @@ footer{
 	align-items: center;
 	align-content: stretch;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 30px;
     background-color: $bluecyan;
     color: $yellowtitle;
     a{
         color: $yellowtitle;
         text-decoration: none;
+        font-size: 1,8em;
     }
 }
 
