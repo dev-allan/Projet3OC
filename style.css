@@ -1,13 +1,21 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("") format("TrueType");
+}
 body {
   margin: 0px;
 }
 
 header {
-  background: green;
+  background: #579c87;
+  height: 90px;
+  display: flex;
 }
 header h1 {
+  font-family: Roboto;
   text-align: center;
-  margin: 0px;
+  margin: auto;
+  color: #fdcb46;
 }
 
 .menu {
@@ -34,11 +42,18 @@ header h1 {
   height: 100%;
   width: 250px;
   height: 350px;
-  background-color: red;
   margin: 10px;
   text-align: center;
+  border: solid 1px #b6b5b5;
+  box-shadow: 2px 2px 5px 2px #bbb9b9;
+  text-decoration: none;
 }
 
+.prochainement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .prochainement .btn {
   display: flex;
   flex-direction: row;
@@ -46,7 +61,14 @@ header h1 {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  border: solid 1px;
+  border: solid 1px #b6b5b5;
+  border-radius: 10px;
+  background-color: #579c87;
+  color: #fdcb46;
+  padding: 2px 20px 2px 20px;
+}
+.prochainement .btn:hover {
+  background-color: red;
 }
 
 footer {
@@ -58,7 +80,40 @@ footer {
   align-content: stretch;
   height: 100px;
   margin-top: 10px;
-  background-color: yellowgreen;
+  background-color: #579c87;
+  color: #fdcb46;
+}
+footer a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+
+#menu1 {
+  background-color: #fcdfdb;
+}
+#menu1:hover {
+  background-color: red;
+}
+
+#menu2 {
+  background-color: #fff5fe;
+}
+#menu2:hover {
+  background-color: red;
+}
+
+#menu3 {
+  background-color: #f9f9f9;
+}
+#menu3:hover {
+  background-color: red;
+}
+
+#menu4 {
+  background-color: #fdfffd;
+}
+#menu4:hover {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
