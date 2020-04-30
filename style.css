@@ -1,9 +1,58 @@
+@charset "UTF-8";
+@keyframes animationfondue {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  20% {
+    transform: rotate(3deg);
+  }
+  40% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+/*font*/
 @font-face {
   font-family: "Roboto";
   src: url("./font/Roboto/Roboto-Regular.ttf") format("TrueType");
 }
+@font-face {
+  font-family: "SegoePrint";
+  src: url("./font/SergoePrint/SegoePrint.ttf") format("TrueType");
+}
+/*Responsive*/
+@media only screen and (max-width: 645px) {
+  .menu {
+    display: block !important;
+  }
+
+  .lacarte .lacarte__block {
+    width: 80%;
+    font-size: 12px;
+  }
+  .lacarte .table {
+    padding: 0px 15px 0px 15ox;
+  }
+}
+/*partie index.html*/
 body {
-  margin: 0px;
+  margin: 0px 0px 100px 0px;
   font-family: Roboto;
 }
 
@@ -15,8 +64,11 @@ header {
 header h1 {
   letter-spacing: -1px;
   font-size: 40px;
-  text-align: center;
   margin: auto;
+  text-decoration: none;
+}
+header .logo {
+  text-decoration: none;
   color: #fdcb46;
 }
 
@@ -41,7 +93,6 @@ header h1 {
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 100%;
   width: 250px;
   height: 350px;
   margin: 10px;
@@ -62,7 +113,8 @@ header h1 {
   letter-spacing: 1px;
   margin: 10px 0px 10px 0;
 }
-.prochainement .btn {
+
+.btn {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -75,54 +127,130 @@ header h1 {
   color: #fdcb46;
   padding: 2px 30px 2px 30px;
 }
-.prochainement .btn:hover {
+.btn:hover {
   background-color: red;
 }
 
 footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   align-content: stretch;
-  height: 100px;
-  margin-top: 30px;
+  height: 50px;
   background-color: #579c87;
   color: #fdcb46;
 }
 footer a {
   color: #fdcb46;
   text-decoration: none;
-  font-size: 1, 8em;
+  font-size: 1.5em;
+}
+footer a:hover {
+  display: inline-block;
+  animation: 400ms wiggle ease;
 }
 
 #menu1 {
   background-color: #fcdfdb;
+  font-family: "SegoePrint";
 }
-#menu1:hover {
-  background-color: red;
+#menu1:hover h2, #menu1:hover p, #menu1:hover span {
+  animation-duration: 400ms;
+  animation-name: animationfondue;
+  animation-fill-mode: both;
+  transition: transform 400ms ease-in-out;
+  transform: scale(1.15);
 }
 
 #menu2 {
   background-color: #fff5fe;
 }
-#menu2:hover {
-  background-color: red;
+#menu2 p {
+  background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menu2:hover h2, #menu2:hover p, #menu2:hover span {
+  animation-duration: 400ms;
+  animation-name: animationfondue;
+  animation-fill-mode: both;
+  transition: transform 400ms ease-in-out;
+  transform: scale(1.15);
 }
 
 #menu3 {
   background-color: #f9f9f9;
 }
-#menu3:hover {
-  background-color: red;
+#menu3 p {
+  background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menu3:hover h2, #menu3:hover p, #menu3:hover span {
+  animation-duration: 400ms;
+  animation-name: animationfondue;
+  animation-fill-mode: both;
+  transition: transform 400ms ease-in-out;
+  transform: scale(1.15);
 }
 
 #menu4 {
   background-color: #fdfffd;
 }
-#menu4:hover {
-  background-color: red;
+#menu4 p {
+  background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menu4:hover h2, #menu4:hover p, #menu4:hover span {
+  animation-duration: 400ms;
+  animation-name: animationfondue;
+  animation-fill-mode: both;
+  transition: transform 400ms ease-in-out;
+  transform: scale(1.15);
+}
+
+/*partie style des fichiers html des menus*/
+.lacarte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.lacarte h1 {
+  text-align: center;
+}
+.lacarte table {
+  padding: 0px 60px 0px 60px;
+}
+.lacarte .lacarte__block {
+  justify-content: center;
+  background-color: #fcdfdb;
+}
+.lacarte .lacarte__block .lacarte__block--titre {
+  flex-direction: row;
+  padding: 50px 0px 30px 0px;
+}
+.lacarte .lacarte__block .lacarte__block--entrée {
+  flex-direction: row;
+  padding: 0px 0px 20px 0px;
+}
+.lacarte .lacarte__block .lacarte__block--plat {
+  flex-direction: row;
+  padding: 30px 0px 20px 0px;
+}
+.lacarte .lacarte__block .lacarte__block--dessert {
+  flex-direction: row;
+  padding: 30px 0px 30px 0px;
+}
+.lacarte .lacarte__block td {
+  padding: 5px 0px 5px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
