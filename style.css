@@ -27,6 +27,23 @@
     transform: rotate(0);
   }
 }
+@keyframes dotty {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
 /*font*/
 @font-face {
   font-family: "Roboto";
@@ -35,6 +52,14 @@
 @font-face {
   font-family: "SegoePrint";
   src: url("./font/SergoePrint/SegoePrint.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "croissant";
+  src: url("./font/CroissantOne/croissantone-regular.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "dancing";
+  src: url("./font/Dancing/dancing.ttf") format("TrueType");
 }
 /*Responsive*/
 @media only screen and (max-width: 645px) {
@@ -106,12 +131,18 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: dotty steps(1, end) 1s infinite;
 }
 .prochainement h3 {
   font-size: 25px;
   font-weight: lighter;
   letter-spacing: 1px;
   margin: 10px 0px 10px 0;
+}
+.prochainement h3:after {
+  display: inline-block;
+  animation: dotty steps(1, end) 4s infinite;
+  content: "";
 }
 
 .btn {
@@ -158,6 +189,14 @@ footer a:hover {
 #menu1 {
   background-color: #fcdfdb;
   font-family: "SegoePrint";
+  color: #3d1319;
+}
+#menu1 span {
+  background: -webkit-linear-gradient(0turn, #f05761, #f26f69, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-style: inherit;
 }
 #menu1:hover h2, #menu1:hover p, #menu1:hover span {
   animation-duration: 400ms;
@@ -169,11 +208,16 @@ footer a:hover {
 
 #menu2 {
   background-color: #fff5fe;
+  font-family: "croissant";
 }
 #menu2 p {
-  background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+  background: -webkit-linear-gradient(0turn, #d68235, #b36e9a, #8f5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#menu2 h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #c77412;
 }
 #menu2:hover h2, #menu2:hover p, #menu2:hover span {
   animation-duration: 400ms;
@@ -187,9 +231,15 @@ footer a:hover {
   background-color: #f9f9f9;
 }
 #menu3 p {
-  background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+  font-family: "Dancing";
+  font-size: 20px;
+  background: -webkit-linear-gradient(0turn, #264be2, #2f75ee, #2897fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#menu3 h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #108bfb;
 }
 #menu3:hover h2, #menu3:hover p, #menu3:hover span {
   animation-duration: 400ms;
@@ -203,9 +253,13 @@ footer a:hover {
   background-color: #fdfffd;
 }
 #menu4 p {
-  background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+  background: -webkit-linear-gradient(0turn, #43973d, #97dd6c, #c3ff8a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#menu4 h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #72bf56;
 }
 #menu4:hover h2, #menu4:hover p, #menu4:hover span {
   animation-duration: 400ms;

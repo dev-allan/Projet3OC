@@ -13,6 +13,11 @@ $yellowtitle: #fdcb46;
     transform: scale(1.15);
 }
 
+@mixin pointdesuspension{
+    animation-name: dotty;
+    animation-duration: 300ms;
+}
+
 //keyframe
 
 @keyframes animationfondue{
@@ -45,6 +50,13 @@ $yellowtitle: #fdcb46;
     }
 }
       
+@keyframes dotty {
+    0%   { content: ''; }
+    25%  { content: '.'; }
+    50%  { content: '..'; }
+    75%  { content: '...'; }
+    100% { content: ''; }
+    }
 
 /*font*/
 
@@ -57,6 +69,17 @@ $yellowtitle: #fdcb46;
     font-family:"SegoePrint";
     src: url("./font/SergoePrint/SegoePrint.ttf") format("TrueType");
 }
+
+@font-face{
+    font-family:"croissant";
+    src: url("./font/CroissantOne/croissantone-regular.ttf") format("TrueType");
+}
+
+@font-face{
+    font-family:"dancing";
+    src: url("./font/Dancing/dancing.ttf") format("TrueType")
+}
+
 /*Responsive*/
 
 @media only screen and (max-width: 645px){
@@ -132,13 +155,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: dotty steps(1,end) 1s infinite;
     h3{
         font-size: 25px;
         font-weight: lighter;
         letter-spacing: 1px;
         margin: 10px 0px 10px 0;
+        &:after{
+            display: inline-block;
+            animation: dotty steps(1,end) 4s infinite;
+            content: '';
+        }
     }
-
 }
 
 .btn{
@@ -185,6 +213,14 @@ footer{
 #menu1{
     background-color: #fcdfdb;
     font-family: "SegoePrint";
+    color: #3d1319;
+    span{
+        background: -webkit-linear-gradient(0turn, #f05761, #f26f69, #f6916a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        font-style: inherit;
+    }
     &:hover{
         h2,p,span{
        @include animationzoom();
@@ -195,10 +231,15 @@ footer{
 
 #menu2{
     background-color: #fff5fe;
+    font-family: "croissant";
     p{
-        background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+        background: -webkit-linear-gradient(0turn, #d68235, #b36e9a, #8f5aff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: #c77412;
     }
     &:hover{
         h2,p,span{
@@ -210,9 +251,15 @@ footer{
 #menu3{
     background-color: #f9f9f9;
     p{
-        background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+        font-family: "Dancing";
+        font-size: 20px;
+        background: -webkit-linear-gradient(0turn, #264be2, #2f75ee, #2897fb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    h2{
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: #108bfb;
     }
     &:hover{
         h2,p,span{
@@ -223,9 +270,13 @@ footer{
 
 #menu4{
     p{
-        background: -webkit-linear-gradient(0turn, #3f87a6, #ebf8e1, #f69d3c);
+        background: -webkit-linear-gradient(0turn, #43973d, #97dd6c, #c3ff8a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    h2{
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color:#72bf56;
     }
     background-color: #fdfffd;
     &:hover{
@@ -254,7 +305,7 @@ footer{
         background-color: #fcdfdb;
         .lacarte__block--titre{
             flex-direction: row;
-            padding: 50px 0px 30px 0px;
+            padding: 30px 0px 30px 0px;
         }
         .lacarte__block--entrée{
             flex-direction: row;
