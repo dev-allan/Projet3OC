@@ -94,8 +94,10 @@ $yellowtitle: #fdcb46;
 
     .lacarte{
         .lacarte__block{
-        width: 80%;
         font-size: 12px;
+        th{
+            font-size: 16px;
+        }
         }
         .table{
             padding: 0px 15px 0px 15ox;
@@ -187,7 +189,8 @@ header{
     color: $yellowtitle;
     padding: 2px 30px 2px 30px;
     &:hover{
-        background-color: red;
+        opacity: 0.90;
+        cursor: pointer;
     }
 }
 

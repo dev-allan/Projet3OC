@@ -72,8 +72,10 @@
   }
 
   .lacarte .lacarte__block {
-    width: 80%;
     font-size: 12px;
+  }
+  .lacarte .lacarte__block th {
+    font-size: 16px;
   }
   .lacarte .table {
     padding: 0px 15px 0px 15ox;
@@ -163,7 +165,8 @@ header .logo {
   padding: 2px 30px 2px 30px;
 }
 .btn:hover {
-  background-color: red;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 footer {
