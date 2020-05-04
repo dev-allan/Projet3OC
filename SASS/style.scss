@@ -80,6 +80,11 @@ $yellowtitle: #fdcb46;
     src: url("./font/Dancing/dancing.ttf") format("TrueType")
 }
 
+@font-face{
+    font-family:"kaus";
+    src: url("./font/kaush/kaush-regular.ttf") format("TrueType")
+}
+
 /*Responsive*/
 
 @media only screen and (max-width: 645px){
@@ -258,7 +263,8 @@ footer{
         -webkit-text-fill-color: transparent;
     }
     h2{
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: "SegoePrint";
+        font-weight: lighter;
         color: #108bfb;
     }
     &:hover{
@@ -270,12 +276,15 @@ footer{
 
 #menu4{
     p{
+        font-family: "kaus";
+        font-size: 20px;
         background: -webkit-linear-gradient(0turn, #43973d, #97dd6c, #c3ff8a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     h2{
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: "SegoePrint";
+        font-weight: lighter;
         color:#72bf56;
     }
     background-color: #fdfffd;
@@ -298,7 +307,7 @@ footer{
         text-align: center;
     }
     table{
-        padding: 0px 60px 0px 60px;
+        padding: 0px 60px 100px 60px;
     }
     .lacarte__block{
         justify-content: center;

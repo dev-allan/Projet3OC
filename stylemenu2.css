@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.lacarte__block {
+  justify-content: center;
+  background-color: #fff5fe !important;
+  font-family: "croissant";
+  border: solid 1px #b6b5b5;
+  box-shadow: 2px 2px 5px 2px #bbb9b9;
+}
+.lacarte__block th {
+  text-transform: none;
+}
+.lacarte__block thead {
+  border: none;
+  box-shadow: none;
+}
+.lacarte__block thead th {
+  background: -webkit-linear-gradient(0turn, #d68235, #b36e9a, #8f5aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lacarte__block .lacarte__block--titre {
+  flex-direction: row;
+  padding: 30px 0px 30px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.lacarte__block .lacarte__block--entrée {
+  justify-content: space-between;
+  padding: 0px 0px 20px 0px;
+  font-size: 22px;
+  color: #c67412;
+}
+.lacarte__block .lacarte__block--entrée hr {
+  background-color: #c67412;
+}
+.lacarte__block .lacarte__block--entrée + tr {
+  color: #c67412;
+}
+.lacarte__block .lacarte__block--entrée + tr + tr {
+  color: #c67412;
+}
+.lacarte__block .lacarte__block--entrée + tr + tr + tr {
+  color: #c67412;
+}
+.lacarte__block .lacarte__block--plat {
+  justify-content: space-between;
+  padding: 30px 0px 20px 0px;
+  font-size: 22px;
+  color: #a56799;
+}
+.lacarte__block .lacarte__block--plat hr {
+  background-color: #a56799;
+}
+.lacarte__block .lacarte__block--plat + tr {
+  color: #a56799;
+}
+.lacarte__block .lacarte__block--plat + tr + tr {
+  color: #a56799;
+}
+.lacarte__block .lacarte__block--plat + tr + tr + tr {
+  color: #a56799;
+}
+.lacarte__block .lacarte__block--dessert {
+  justify-content: space-between;
+  padding: 30px 0px 30px 0px;
+  font-size: 22px;
+  color: #6f4dcc;
+}
+.lacarte__block .lacarte__block--dessert hr {
+  background-color: #6f4dcc;
+}
+.lacarte__block .lacarte__block--dessert + tr {
+  color: #6f4dcc;
+}
+.lacarte__block .lacarte__block--dessert + tr + tr {
+  color: #6f4dcc;
+}
+.lacarte__block .lacarte__block--dessert + tr + tr + tr {
+  color: #6f4dcc;
+}
+.lacarte__block td {
+  padding: 5px 0px 5px 0px;
+  font-weight: lighter;
+  margin: 10px;
+}
+.lacarte__block td hr {
+  width: 130px;
+  height: 2px;
+  background-color: #4b2227;
+}
+.lacarte__block span {
+  background: -webkit-linear-gradient(0turn, #f05761, #f26f69, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-style: oblique -20deg;
+  font-weight: lighter;
+}
+.lacarte__block tr {
+  display: flex;
+  justify-content: space-between;
+  color: #4b2227;
+  border: none;
+  box-shadow: none;
+}
+
+th {
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+th:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #4b2227;
+  transform: scaleX(0);
+  transition: transform 310ms ease-in-out;
+}
+
+th:hover:after {
+  transform: scaleX(1);
+}
+
+th:after {
+  transform-origin: 0% 50%;
+}
+
+/*# sourceMappingURL=stylemenu2.css.map */
