@@ -68,7 +68,7 @@
 /*Responsive*/
 @media only screen and (max-width: 645px) {
   header {
-    height: 50px !important;
+    height: auto !important;
   }
   header .logo {
     font-size: 10vh;
@@ -99,7 +99,7 @@
   }
 
   footer {
-    height: 40px !important;
+    height: auto !important;
   }
   footer a {
     font-size: 5vh !important;
