@@ -88,21 +88,48 @@ $yellowtitle: #fdcb46;
 /*Responsive*/
 
 @media only screen and (max-width: 645px){
+    header{
+        height: 50px !important;
+        .logo{
+            font-size: 10vh;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
     .menu{
         display: block !important;
     }
 
     .lacarte{
         .lacarte__block{
-        font-size: 12px;
+            font-size: 9px;
+            padding: 0px 15px 0px 15px;
         th{
             font-size: 16px;
         }
         }
-        .table{
-            padding: 0px 15px 0px 15ox;
+        table{
+            padding: 0px 15px 0px 15px !important;
+        }
+        hr{
+            display: none;
         }
     }
+    .prochainement{
+        .btn{
+            h3{
+                font-size: 5vh;
+            }
+        }
+    }
+    footer{
+        height: 40px !important;
+        a{
+            font-size: 5vh !important;
+        }
+    }
+
 }
 
 /*partie index.html*/
@@ -133,6 +160,9 @@ header{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 50px;
+    h6{
+        display: none;
+    }
     .menudescription{
         display: flex;
         flex-direction: row;
