@@ -91,7 +91,8 @@ $yellowtitle: #fdcb46;
     header{
         height: auto !important;
         .logo{
-            font-size: 10vh;
+            display: block !important;
+            font-size: 25px;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -118,18 +119,48 @@ $yellowtitle: #fdcb46;
     }
     .prochainement{
         .btn{
+            // padding: 2px 2px 2px 2px;
             h3{
-                font-size: 5vh;
+                font-size: 13px;
             }
         }
     }
     footer{
         height: auto !important;
         a{
-            font-size: 5vh !important;
+            font-size: 15px !important;
         }
     }
 
+}
+
+@media only screen and (max-width: 300px){
+
+    body{
+        margin: 0px 0px 50px 0px !important;
+    }
+    .menudescription{
+        .menudescription__btn{
+            height: 250px !important;
+            width: 180px !important;
+            font-size: 10px !important;
+        }
+    }
+    .prochainement{
+        .btn{
+            padding: 3px !important;
+            h3{
+                font-size: 13px;
+            }
+        }
+    }
+
+    footer{
+        height: auto !important;
+        a{
+            font-size: 10px !important;
+        }
+    }
 }
 
 /*partie index.html*/

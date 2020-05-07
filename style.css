@@ -71,7 +71,8 @@
     height: auto !important;
   }
   header .logo {
-    font-size: 10vh;
+    display: block !important;
+    font-size: 25px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -95,14 +96,39 @@
   }
 
   .prochainement .btn h3 {
-    font-size: 5vh;
+    font-size: 13px;
   }
 
   footer {
     height: auto !important;
   }
   footer a {
-    font-size: 5vh !important;
+    font-size: 15px !important;
+  }
+}
+@media only screen and (max-width: 300px) {
+  body {
+    margin: 0px 0px 50px 0px !important;
+  }
+
+  .menudescription .menudescription__btn {
+    height: 250px !important;
+    width: 180px !important;
+    font-size: 10px !important;
+  }
+
+  .prochainement .btn {
+    padding: 3px !important;
+  }
+  .prochainement .btn h3 {
+    font-size: 13px;
+  }
+
+  footer {
+    height: auto !important;
+  }
+  footer a {
+    font-size: 10px !important;
   }
 }
 /*partie index.html*/

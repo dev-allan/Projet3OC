@@ -2,6 +2,17 @@ $orangeentree:#c67412;
 $couleurplat:#a56799;
 $couleurdessert:#6f4dcc;
 
+/* responsive*/
+
+@media only screen and (max-width: 645px){
+    .lacarte__block{
+        font-size: 10px !important;
+        th{
+            font-size: 13px !important;
+        }
+    }
+}
+
 .lacarte__block{
     justify-content: center;
     background-color: #fff5fe !important;
