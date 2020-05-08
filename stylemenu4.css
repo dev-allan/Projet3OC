@@ -56,6 +56,23 @@
 .lacarte__block .lacarte__block--entrée tr {
   color: #2d2e2e;
 }
+.lacarte__block .lacarte__block--entrée th {
+  display: inline-block;
+  margin: 0;
+}
+.lacarte__block .lacarte__block--entrée th:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #4b2227;
+  transform: scaleX(0);
+  transition: transform 310ms ease-in-out;
+}
+.lacarte__block .lacarte__block--entrée th:hover:after {
+  transform: scaleX(1);
+}
+.lacarte__block .lacarte__block--entrée th:after {
+  transform-origin: 0% 50%;
+}
 .lacarte__block .lacarte__block--plat {
   justify-content: space-between;
   padding: 30px 0px 20px 0px;
@@ -75,6 +92,23 @@
 .lacarte__block .lacarte__block--plat tr {
   color: #2d2e2e;
 }
+.lacarte__block .lacarte__block--plat th {
+  display: inline-block;
+  margin: 0;
+}
+.lacarte__block .lacarte__block--plat th:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #4b2227;
+  transform: scaleX(0);
+  transition: transform 310ms ease-in-out;
+}
+.lacarte__block .lacarte__block--plat th:hover:after {
+  transform: scaleX(1);
+}
+.lacarte__block .lacarte__block--plat th:after {
+  transform-origin: 0% 50%;
+}
 .lacarte__block .lacarte__block--dessert {
   justify-content: space-between;
   padding: 30px 0px 30px 0px;
@@ -93,6 +127,23 @@
 }
 .lacarte__block .lacarte__block--dessert tr {
   color: #2d2e2e;
+}
+.lacarte__block .lacarte__block--dessert th {
+  display: inline-block;
+  margin: 0;
+}
+.lacarte__block .lacarte__block--dessert th:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #4b2227;
+  transform: scaleX(0);
+  transition: transform 310ms ease-in-out;
+}
+.lacarte__block .lacarte__block--dessert th:hover:after {
+  transform: scaleX(1);
+}
+.lacarte__block .lacarte__block--dessert th:after {
+  transform-origin: 0% 50%;
 }
 .lacarte__block td {
   padding: 5px 0px 5px 0px;
@@ -118,28 +169,6 @@
   color: #4b2227;
   border: none;
   box-shadow: none;
-}
-
-th {
-  display: inline-block;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-th:after {
-  display: block;
-  content: "";
-  border-bottom: solid 3px #4b2227;
-  transform: scaleX(0);
-  transition: transform 310ms ease-in-out;
-}
-
-th:hover:after {
-  transform: scaleX(1);
-}
-
-th:after {
-  transform-origin: 0% 50%;
 }
 
 /*# sourceMappingURL=stylemenu4.css.map */

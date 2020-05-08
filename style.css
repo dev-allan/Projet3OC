@@ -80,6 +80,12 @@
   .menu {
     display: block !important;
   }
+  .menu .menudescription:nth-child(2n) {
+    justify-content: center !important;
+  }
+  .menu .menudescription:nth-child(2n+1) {
+    justify-content: center !important;
+  }
 
   .lacarte .lacarte__block {
     font-size: 9px;
@@ -95,6 +101,10 @@
     display: none;
   }
 
+  .prochainement .btn {
+    padding: 2px 8px 2px 8px;
+    width: 130px;
+  }
   .prochainement .btn h3 {
     font-size: 13px;
   }
@@ -170,6 +180,12 @@ header .logo {
   align-items: center;
   align-content: space-around;
 }
+.menu .menudescription:nth-child(2n) {
+  justify-content: right;
+}
+.menu .menudescription:nth-child(2n+1) {
+  justify-content: left;
+}
 .menu .menudescription .menudescription__btn {
   display: flex;
   flex-direction: column;
@@ -216,6 +232,7 @@ header .logo {
   background-color: #579c87;
   color: #fdcb46;
   padding: 2px 30px 2px 30px;
+  width: 205px;
 }
 .btn:hover {
   opacity: 0.9;
@@ -229,7 +246,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   align-content: stretch;
   height: 50px;
@@ -239,7 +256,8 @@ footer {
 footer a {
   color: #fdcb46;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  padding: 0px 30px 0px 30px;
 }
 footer a:hover {
   display: inline-block;
@@ -257,6 +275,7 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
   font-size: 30px;
   font-style: inherit;
+  font-style: oblique;
 }
 #menu1:hover h2, #menu1:hover p, #menu1:hover span {
   animation-duration: 400ms;
@@ -274,6 +293,7 @@ footer a:hover {
   background: -webkit-linear-gradient(0turn, #d68235, #b36e9a, #8f5aff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0px 12px 0px 12px;
 }
 #menu2 h2 {
   font-family: "Times New Roman", Times, serif;
@@ -296,6 +316,7 @@ footer a:hover {
   background: -webkit-linear-gradient(0turn, #264be2, #2f75ee, #2897fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0px 12px 0px 12px;
 }
 #menu3 h2 {
   font-family: "SegoePrint";
@@ -319,6 +340,7 @@ footer a:hover {
   background: -webkit-linear-gradient(0turn, #43973d, #97dd6c, #c3ff8a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0px 12px 0px 12px;
 }
 #menu4 h2 {
   font-family: "SegoePrint";

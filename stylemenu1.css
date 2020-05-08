@@ -35,12 +35,48 @@
   border: none;
   box-shadow: none;
 }
+.lacarte__block .lacarte__block--entrée th {
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+.lacarte__block .lacarte__block--entrée th:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #4b2227;
+  transform: scaleX(0);
+  transition: transform 310ms ease-in-out;
+}
+.lacarte__block .lacarte__block--entrée th:hover:after {
+  transform: scaleX(1);
+}
+.lacarte__block .lacarte__block--entrée th:after {
+  transform-origin: 0% 50%;
+}
 .lacarte__block .lacarte__block--plat {
   justify-content: space-between;
   padding: 30px 0px 20px 0px;
   font-size: 22px;
   border: none;
   box-shadow: none;
+}
+.lacarte__block .lacarte__block--plat th {
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+.lacarte__block .lacarte__block--plat th:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #4b2227;
+  transform: scaleX(0);
+  transition: transform 310ms ease-in-out;
+}
+.lacarte__block .lacarte__block--plat th:hover:after {
+  transform: scaleX(1);
+}
+.lacarte__block .lacarte__block--plat th:after {
+  transform-origin: 0% 50%;
 }
 .lacarte__block .lacarte__block--dessert {
   justify-content: space-between;
@@ -49,6 +85,24 @@
   border: none;
   box-shadow: none;
 }
+.lacarte__block .lacarte__block--dessert th {
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+.lacarte__block .lacarte__block--dessert th:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #4b2227;
+  transform: scaleX(0);
+  transition: transform 310ms ease-in-out;
+}
+.lacarte__block .lacarte__block--dessert th:hover:after {
+  transform: scaleX(1);
+}
+.lacarte__block .lacarte__block--dessert th:after {
+  transform-origin: 0% 50%;
+}
 .lacarte__block td {
   padding: 5px 0px 5px 0px;
 }
@@ -56,6 +110,7 @@
   width: 130px;
   height: 2px;
   background-color: #4b2227;
+  border: none;
 }
 .lacarte__block td:nth-child(2) {
   font-weight: bold;
@@ -72,28 +127,6 @@
   display: flex;
   justify-content: space-between;
   color: #4b2227;
-}
-
-th {
-  display: inline-block;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-th:after {
-  display: block;
-  content: "";
-  border-bottom: solid 3px #4b2227;
-  transform: scaleX(0);
-  transition: transform 310ms ease-in-out;
-}
-
-th:hover:after {
-  transform: scaleX(1);
-}
-
-th:after {
-  transform-origin: 0% 50%;
 }
 
 /*# sourceMappingURL=stylemenu1.css.map */

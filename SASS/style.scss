@@ -100,6 +100,14 @@ $yellowtitle: #fdcb46;
 
     .menu{
         display: block !important;
+        .menudescription{
+            &:nth-child(2n){
+                justify-content: center!important;
+            }
+            &:nth-child(2n+1){
+                justify-content: center!important;
+            }
+        }
     }
 
     .lacarte{
@@ -119,7 +127,8 @@ $yellowtitle: #fdcb46;
     }
     .prochainement{
         .btn{
-            // padding: 2px 2px 2px 2px;
+            padding: 2px 8px 2px 8px;
+            width: 130px;
             h3{
                 font-size: 13px;
             }
@@ -201,6 +210,12 @@ header{
         justify-content: space-around;
         align-items: center;
         align-content: space-around;
+        &:nth-child(2n){
+            justify-content: right;
+        }
+        &:nth-child(2n+1){
+            justify-content: left;
+        }
         .menudescription__btn{
             display: flex;
             flex-direction: column;
@@ -249,6 +264,7 @@ header{
     background-color: $bluecyan;
     color: $yellowtitle;
     padding: 2px 30px 2px 30px;
+    width: 205px;
     &:hover{
         opacity: 0.90;
         cursor: pointer;
@@ -262,7 +278,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	align-content: stretch;
     height: 50px;
@@ -271,7 +287,8 @@ footer{
     a{
         color: $yellowtitle;
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.4em;
+        padding: 0px 30px 0px 30px;
         &:hover{
             display: inline-block;
             animation: 400ms wiggle ease;
@@ -289,6 +306,7 @@ footer{
         -webkit-text-fill-color: transparent;
         font-size: 30px;
         font-style: inherit;
+        font-style: oblique;
     }
     &:hover{
         h2,p,span{
@@ -305,6 +323,7 @@ footer{
         background: -webkit-linear-gradient(0turn, #d68235, #b36e9a, #8f5aff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding: 0px 12px 0px 12px;
     }
     h2{
         font-family: 'Times New Roman', Times, serif;
@@ -325,6 +344,7 @@ footer{
         background: -webkit-linear-gradient(0turn, #264be2, #2f75ee, #2897fb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding: 0px 12px 0px 12px;
     }
     h2{
         font-family: "SegoePrint";
@@ -345,6 +365,7 @@ footer{
         background: -webkit-linear-gradient(0turn, #43973d, #97dd6c, #c3ff8a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding: 0px 12px 0px 12px;
     }
     h2{
         font-family: "SegoePrint";
