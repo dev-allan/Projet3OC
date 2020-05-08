@@ -181,10 +181,10 @@ header .logo {
   align-content: space-around;
 }
 .menu .menudescription:nth-child(2n) {
-  justify-content: right;
+  justify-content: flex-end;
 }
 .menu .menudescription:nth-child(2n+1) {
-  justify-content: left;
+  justify-content: flex-start;
 }
 .menu .menudescription .menudescription__btn {
   display: flex;

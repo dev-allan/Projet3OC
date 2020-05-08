@@ -211,10 +211,10 @@ header{
         align-items: center;
         align-content: space-around;
         &:nth-child(2n){
-            justify-content: right;
+            justify-content: flex-end;
         }
         &:nth-child(2n+1){
-            justify-content: left;
+            justify-content: flex-start;
         }
         .menudescription__btn{
             display: flex;
