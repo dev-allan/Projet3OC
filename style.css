@@ -103,7 +103,7 @@
 
   .prochainement .btn {
     padding: 2px 8px 2px 8px;
-    width: 130px;
+    width: 115px;
   }
   .prochainement .btn h3 {
     font-size: 13px;
@@ -221,7 +221,6 @@ header .logo {
 }
 
 .btn {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;

@@ -128,7 +128,7 @@ $yellowtitle: #fdcb46;
     .prochainement{
         .btn{
             padding: 2px 8px 2px 8px;
-            width: 130px;
+            width: 115px;
             h3{
                 font-size: 13px;
             }
@@ -253,7 +253,7 @@ header{
 }
 
 .btn{
-    display: flex;
+    // display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
