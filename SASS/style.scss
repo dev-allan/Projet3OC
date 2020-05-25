@@ -24,6 +24,9 @@ $yellowtitle: #fdcb46;
         0% {
             opacity: 1;
         }
+        50%{
+            opacity: 0.85;
+        }
         100% {
             opacity: 0.75;
         }
@@ -246,7 +249,7 @@ header{
         margin: 10px 0px 10px 0;
         &:after{
             display: inline-block;
-            animation: dotty steps(1,end) 4s infinite;
+            -webkit-animation: dotty steps(1,end) 4s infinite;
             content: '';
         }
     }
@@ -307,6 +310,7 @@ footer{
         font-size: 30px;
         font-style: inherit;
         font-style: oblique;
+        width : 35px;
     }
     &:hover{
         h2,p,span{

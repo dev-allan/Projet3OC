@@ -3,6 +3,9 @@
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 0.85;
+  }
   100% {
     opacity: 0.75;
   }
@@ -216,7 +219,7 @@ header .logo {
 }
 .prochainement h3:after {
   display: inline-block;
-  animation: dotty steps(1, end) 4s infinite;
+  -webkit-animation: dotty steps(1, end) 4s infinite;
   content: "";
 }
 
@@ -275,6 +278,7 @@ footer a:hover {
   font-size: 30px;
   font-style: inherit;
   font-style: oblique;
+  width: 35px;
 }
 #menu1:hover h2, #menu1:hover p, #menu1:hover span {
   animation-duration: 400ms;
