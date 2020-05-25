@@ -53,13 +53,13 @@ $yellowtitle: #fdcb46;
     }
 }
       
-@keyframes dotty {
-    0%   { content: ''; }
-    25%  { content: '.'; }
-    50%  { content: '..'; }
-    75%  { content: '...'; }
-    100% { content: ''; }
-    }
+// @keyframes dotty {
+//     0%   { content: ''; }
+//     25%  { content: '.'; }
+//     50%  { content: '..'; }
+//     75%  { content: '...'; }
+//     100% { content: ''; }
+//     }
 
 /*font*/
 
@@ -248,12 +248,110 @@ header{
         letter-spacing: 1px;
         margin: 10px 0px 10px 0;
         &:after{
-            display: inline-block;
-            -webkit-animation: dotty steps(1,end) 4s infinite;
-            content: '';
+            // display: inline-block;
+            // // -webkit-animation: dotty steps(1,end) 4s infinite;
+            // content: '.';
+            // transition : all 400ms, ease; 
         }
     }
 }
+
+@-webkit-keyframes opacity {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+  }
+  
+  @-moz-keyframes opacity {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+    }
+  
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes opacity {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+  }
+  
+  @-moz-keyframes opacity {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+  }
+  
+  @-o-keyframes opacity {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes opacity {
+    0% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+    }
+    100% {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+    }
+  }
+
+  #dotty span {
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: opacity;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: opacity;
+    -ms-animation-duration: 1s;
+    -ms-animation-iteration-count: infinite;
+  }
+  #dotty span:nth-child(2) {
+    -webkit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+    -ms-animation-delay: 100ms;
+    -o-animation-delay: 100ms;
+    animation-delay: 100ms;
+  }
+  #dotty span:nth-child(3) {
+    -webkit-animation-delay: 300ms;
+    -moz-animation-delay: 300ms;
+    -ms-animation-delay: 300ms;
+    -o-animation-delay: 300ms;
+    animation-delay: 300ms;
+  }
+
+  #dotty span{
+      letter-spacing: -15px;
+  }
 
 .btn{
     // display: flex;
